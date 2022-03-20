@@ -1,6 +1,6 @@
 # groupvar
 
-[![pkg.go.dev][gopkg-badge]][gopkg]
+[![](https://pkg.go.dev/badge/github.com/rinchsan/groupvar.svg)](https://pkg.go.dev/github.com/rinchsan/groupvar/cmd/groupvar)
 
 `groupvar` finds low-readability variable/constant declarations.
 
