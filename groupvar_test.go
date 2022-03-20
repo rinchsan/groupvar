@@ -1,10 +1,10 @@
 package groupvar_test
 
 import (
-	"groupvar"
 	"testing"
 
 	"github.com/gostaticanalysis/testutil"
+	"github.com/rinchsan/groupvar"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 
