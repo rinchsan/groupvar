@@ -1,8 +1,7 @@
 package main
 
 import (
-	"groupvar"
-
+	"github.com/rinchsan/groupvar"
 	"golang.org/x/tools/go/analysis/unitchecker"
 )
 
