@@ -1,4 +1,4 @@
-module groupvar
+module github.com/rinchsan/groupvar
 
 go 1.17
 
