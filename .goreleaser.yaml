@@ -1,0 +1,31 @@
+project_name: groupvar
+changelog:
+  skip: true
+builds:
+  - id: groupvar
+    main: ./cmd/groupvar/
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+brews:
+  - name: groupvar
+    tap:
+      owner: rinchsan
+      name: homebrew-tap
+    url_template: "https://github.com/rinchsan/groupvar/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    commit_author:
+      name: goreleaserbot
+      email: goreleaser@carlosbecker.com
+    folder: Formula
+    homepage: "https://pkg.go.dev/github.com/rinchsan/groupvar/cmd/groupvar"
+    description: Command groupvar finds low-readability variable/constant declarations.
+    test: |
+      system "#{bin}/groupvar --help"
+    install: |
+      bin.install "groupvar"
